@@ -8,3 +8,6 @@ class Wall:
 
     def fortify(self):
         self.armor *= 2
+
+    def get_cost(self):
+        return self.armor * self.height

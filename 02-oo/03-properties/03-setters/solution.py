@@ -2,7 +2,7 @@ class Time:
     def __init__(self, hours, minutes, seconds):
         self.hours = hours
         self.minutes = minutes
-        self.seconds = seconds
+        self.secondes = seconds
 
     @property
     def hours(self):
@@ -27,12 +27,12 @@ class Time:
             raise ValueError("Invalid value for minutes")
 
     @property
-    def seconds(self):
-        return self.__seconds
+    def secondes(self):
+        return self.__secondes
 
-    @seconds.setter
-    def seconds(self, value):
+    @secondes.setter
+    def secondes(self, value):
         if 0 <= value <= 59:
-            self.__seconds = value
+            self.__secondes = value
         else:
             raise ValueError("")

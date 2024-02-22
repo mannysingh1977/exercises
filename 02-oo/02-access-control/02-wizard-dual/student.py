@@ -11,7 +11,7 @@ class Wizard:
         return self.__health
 
     def get_fireballed(self):
-        pass
+        self.__health -= 30
 
     def drink_mana_potion(self):
-        pass
+        self.__mana += 40

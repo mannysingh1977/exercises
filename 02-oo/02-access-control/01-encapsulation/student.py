@@ -1,9 +1,11 @@
 class Wizard:
     def __init__(self, name):
-        pass
+        self.name = name
+        self.__health = 65
+        self.__mana = 45
 
     def get_mana(self):
-        pass
+        return self.__mana
 
     def get_health(self):
-        pass
+        return self.__health
