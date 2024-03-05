@@ -20,7 +20,6 @@ class Archer(Human):
         else:
             self.__num_arrows -= num
 
-
 class Crossbowman(Archer):
     def __init__(self, name, num_arrows):
         super().__init__(name, num_arrows)
